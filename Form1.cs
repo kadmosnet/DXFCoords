@@ -23,6 +23,8 @@ namespace DXFCoords
         private void button1_Click(object sender, EventArgs e)
         {
             dxfReaderNETControl1.ReadDXF(@"..\..\surface.dxf");
+            dxfReaderNETControl1.Refresh();
+            dxfReaderNETControl1.ZoomCenter();
         }
 
         private void button2_Click(object sender, EventArgs e)
